@@ -14,7 +14,7 @@ class NNData:
     self._op = _op
 
   def __repr__(self):
-    return f"\nData: {self.data}, Grad: {self.grad}"
+    return f"{self.data}"
 
   def __add__(self, other):
     other = other if isinstance(other, NNData) else NNData(other)
@@ -56,7 +56,6 @@ class NNData:
     self.top_sort(self, nodes, visited)
 
     nodes.reverse()
-    print(nodes)
 
     for node in nodes:
       node._backward()
@@ -83,7 +82,7 @@ class NNData:
     return out 
 
 
-    
+"""
 def main():
   a = NNData(2)
   b = NNData(-3)
@@ -108,3 +107,4 @@ def main():
 
 
 main()
+"""

@@ -23,6 +23,7 @@ class Neuron:
 
     return out
 
+"""
 def main():
   x = Neuron(3)
   out = x([2.0, 3.0, -1.0])
@@ -30,6 +31,8 @@ def main():
   out.backward()
 
   for weight in x.weights:
+    print("WEIGHT")
     print(weight.grad)
 
 main()
+"""

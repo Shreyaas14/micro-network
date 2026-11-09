@@ -13,7 +13,8 @@ class Layer:
   def __call__(self, x):
     outputs = []
     for neuron in self.neurons:
-      outputs.append(neuron(x))
+      y = neuron(x)
+      outputs.append(y)
 
     return outputs
     
